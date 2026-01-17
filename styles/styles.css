@@ -65,7 +65,6 @@ aside {
   border-radius: 10px;
 }
 
-/* Required: aside image sizing */
 aside img {
   width: 200px;
   height: auto;
@@ -74,7 +73,6 @@ aside img {
   border-radius: 10px;
 }
 
-/* Required: footer styling */
 footer {
   margin-top: 24px;
   border-top: 2px solid #cbd5e1;
