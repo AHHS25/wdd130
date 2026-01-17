@@ -1,0 +1,84 @@
+/* Basic reset / improvements */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+header {
+  background-color: #0f172a;
+  padding: 12px 16px;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Required: limit main width */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+/* Required: profile image selector specificity */
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Required: p padding to 0 */
+p {
+  padding: 0;
+}
+
+/* Required: aside styling */
+aside {
+  width: 90%;
+  max-width: 800px;
+  margin: 16px auto;
+  border: 1px solid #cbd5e1;
+  padding: 16px;
+  background-color: #eef2ff;
+  color: #0f172a;
+  border-radius: 10px;
+}
+
+/* Required: aside image sizing */
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/* Required: footer styling */
+footer {
+  margin-top: 24px;
+  border-top: 2px solid #cbd5e1;
+  text-align: center;
+  padding: 16px;
+  background-color: #ffffff;
+}
