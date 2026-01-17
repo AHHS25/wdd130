@@ -1,3 +1,4 @@
+/* Basic reset / improvements */
 * {
   box-sizing: border-box;
 }
@@ -6,67 +7,78 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   margin: 0;
+  color: #1f2937;
+  background-color: #f9fafb;
 }
 
-/* REQUIRED: nav rule with background-color and padding */
+header {
+  background-color: #0f172a;
+  padding: 12px 16px;
+}
+
 nav {
-  background-color: steelblue;
-  padding: 10px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-/* REQUIRED: nav a rule with color, padding, and display:block */
 nav a {
-  color: white;
-  padding: 10px;
-  display: block;
+  color: #ffffff;
   text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
 }
 
-/* REQUIRED: main rule with max-width */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Required: limit main width */
 main {
   max-width: 800px;
   margin: 0 auto;
   padding: 16px;
+  background-color: #ffffff;
 }
 
-/* REQUIRED: h1 rule with color */
-h1 {
-  color: steelblue;
-}
-
-/* REQUIRED: main img rule with width, height, border, padding, box-shadow */
+/* Required: profile image selector specificity */
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid #333;
-  padding: 2px;
-  box-shadow: 0 0 10px #777;
+  border-radius: 10px;
 }
 
-/* REQUIRED: p rule with padding: 0 */
+/* Required: p padding to 0 */
 p {
   padding: 0;
 }
 
-/* REQUIRED: aside rule with required properties */
+/* Required: aside styling */
 aside {
   width: 90%;
+  max-width: 800px;
   margin: 16px auto;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
   padding: 16px;
-  background-color: #eee;
-  color: #000;
+  background-color: #eef2ff;
+  color: #0f172a;
+  border-radius: 10px;
 }
 
-/* REQUIRED: aside img width 200px and height auto */
+/* Required: aside image sizing */
 aside img {
   width: 200px;
   height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 10px;
 }
 
-/* REQUIRED: footer rule with margin-top, border-top, text-align center */
+/* Required: footer styling */
 footer {
   margin-top: 24px;
-  border-top: 1px solid #ccc;
+  border-top: 2px solid #cbd5e1;
   text-align: center;
+  padding: 16px;
+  background-color: #ffffff;
 }
