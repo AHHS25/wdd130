@@ -1,6 +1,3 @@
-/* ===============================
-   CSS VARIABLES
-================================ */
 :root {
   --primary-color: #1b4965;
   --secondary-color: #62b6cb;
@@ -11,34 +8,24 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ===============================
-   RESET
-================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===============================
-   BASE STYLES
-================================ */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  background-color: #ffffff;
+  background-color: var(--accent2-color); /* ✅ now accent2 is used */
 }
 
-header,
-main,
-footer {
+header, main, footer {
   width: 840px;
   margin: 0 auto;
+  background-color: #ffffff; /* keeps the page area white */
 }
 
-/* ===============================
-   HEADER
-================================ */
 header {
   display: flex;
   align-items: center;
@@ -48,11 +35,9 @@ header {
 
 header img {
   width: 120px;
+  height: auto;
 }
 
-/* ===============================
-   NAVIGATION
-================================ */
 nav a {
   text-decoration: none;
   margin-left: 16px;
@@ -64,28 +49,20 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-/* ===============================
-   HEADINGS
-================================ */
-h1,
-h2 {
+h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* ===============================
-   CONTENT SPACING
-================================ */
-p,
-section,
-article {
+nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* ===============================
-   HERO SECTION
-================================ */
+.socialmedia a {
+  text-decoration: none;
+}
+
 .hero {
   position: relative;
 }
@@ -96,7 +73,6 @@ article {
   height: auto;
 }
 
-/* HERO TITLE */
 .hero h1 {
   position: absolute;
   top: 20px;
@@ -104,10 +80,9 @@ article {
   padding: 16px;
   text-align: center;
   background-color: rgba(11, 19, 32, 0.8);
-  color: #ffffff;
+  color: #fff;
 }
 
-/* HERO ARTICLE */
 .hero article {
   position: absolute;
   bottom: 20px;
@@ -117,7 +92,6 @@ article {
   padding: 16px;
 }
 
-/* HERO ARTICLE IMAGE */
 .hero article img {
   float: right;
   width: 125px;
@@ -125,24 +99,13 @@ article {
   border-radius: 8px;
 }
 
-/* ===============================
-   FOOTER
-================================ */
 footer {
   text-align: center;
   padding: 16px;
 }
 
-/* SOCIAL MEDIA */
-.socialmedia {
-  margin-top: 8px;
-}
-
-.socialmedia a {
-  text-decoration: none;
-}
-
 .socialmedia img {
   width: 32px;
+  height: auto;
   margin: 0 6px;
 }
