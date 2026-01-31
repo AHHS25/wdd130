@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Us | White Water Rafting</title>
-  <meta name="description" content="Learn about our rafting company, our history, and our adventures." />
-  <meta name="author" content="Alan Hernandez" />
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <meta name="description" content="Learn about our rafting company, our history, and our adventures.">
+  <meta name="author" content="Alan Hernandez">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">
-      <img src="images/logo.png" alt="White Water Rafting logo" width="120" height="120" />
+      <img src="images/logo.png" alt="White Water Rafting logo" width="120" height="120">
     </a>
 
     <nav class="site-nav" aria-label="Primary navigation">
@@ -23,21 +23,25 @@
     </nav>
   </header>
 
-  <main class="about">
-    <!-- HERO -->
-    <section class="hero">
-      <img class="hero-img" src="images/hero.jpg" alt="Rafting group on exciting rapids" />
-      <h1>About Us</h1>
+  <main>
+    <!-- HERO (debe ser div.hero según el audit tool) -->
+    <div class="hero">
+      <img src="images/hero.jpg" alt="Rafting group on exciting rapids">
 
-      <div class="hero-card">
+      <!-- h1 debe estar dentro de .hero e incluir el nombre de la compañía -->
+      <h1>White Water Rafting</h1>
+
+      <!-- Debe haber UN solo article dentro de .hero y debe incluir una img -->
+      <article>
+        <img src="images/history.jpg" alt="Guides preparing gear at the river">
         <p>
           We create unforgettable whitewater adventures for families, teams, and thrill-seekers.
-          Our guides are certified, safety-focused, and passionate about the river.
+          Our certified guides focus on safety, fun, and respect for the river.
         </p>
-      </div>
-    </section>
+      </article>
+    </div>
 
-    <!-- HISTORY -->
+    <!-- MAIN debe tener EXACTAMENTE 2 section -->
     <section class="history">
       <h2>History</h2>
 
@@ -47,7 +51,7 @@
           and a big mission: make rafting safe, fun, and accessible to everyone.
         </p>
 
-        <img src="images/history.jpg" alt="Historic rafting photo and river landscape" />
+        <img src="images/history.jpg" alt="Historic rafting photo and river landscape">
 
         <p>
           Today, we run multiple routes for different skill levels—from scenic floats to advanced rapids.
@@ -56,33 +60,32 @@
       </div>
     </section>
 
-    <!-- ADVENTURES -->
     <section class="adventures">
       <h2>Adventure Awaits You!</h2>
 
-      <div class="adventure-grid">
+      <div class="adventure-gallery">
         <figure>
-          <img src="images/adventure1.jpg" alt="Los Dientes del Diablo rapids" />
+          <img src="images/adventure1.jpg" alt="Los Dientes del Diablo rapids">
           <figcaption>Los Dientes del Diablo</figcaption>
         </figure>
 
         <figure>
-          <img src="images/adventure2.jpg" alt="Big Mallard river run" />
+          <img src="images/adventure2.jpg" alt="Big Mallard river run">
           <figcaption>Big Mallard</figcaption>
         </figure>
 
         <figure>
-          <img src="images/adventure3.jpg" alt="Half Day Adventure rafting trip" />
+          <img src="images/adventure3.jpg" alt="Half Day Adventure rafting trip">
           <figcaption>Half Day Adventure</figcaption>
         </figure>
 
         <figure>
-          <img src="images/adventure4.jpg" alt="Canyon Explorer rafting trip" />
+          <img src="images/adventure4.jpg" alt="Canyon Explorer rafting trip">
           <figcaption>Canyon Explorer</figcaption>
         </figure>
 
         <figure>
-          <img src="images/adventure5.jpg" alt="Sunset Rapids rafting trip" />
+          <img src="images/adventure5.jpg" alt="Sunset Rapids rafting trip">
           <figcaption>Sunset Rapids</figcaption>
         </figure>
       </div>
@@ -92,15 +95,16 @@
   <footer class="site-footer">
     <p>© 2026 White Water Rafting | Alan Hernandez</p>
 
-    <nav class="social" aria-label="Social media links">
+    <!-- Debe existir nav.socialmedia con exactamente 3 a -->
+    <nav class="socialmedia" aria-label="Social media links">
       <a href="#" aria-label="Facebook">
-        <img src="images/facebook.png" alt="Facebook icon" width="32" height="32" />
+        <img src="images/facebook.png" alt="Facebook icon" width="32" height="32">
       </a>
       <a href="#" aria-label="Instagram">
-        <img src="images/instagram.png" alt="Instagram icon" width="32" height="32" />
+        <img src="images/instagram.png" alt="Instagram icon" width="32" height="32">
       </a>
       <a href="#" aria-label="Twitter">
-        <img src="images/twitter.png" alt="Twitter icon" width="32" height="32" />
+        <img src="images/twitter.png" alt="Twitter icon" width="32" height="32">
       </a>
     </nav>
   </footer>
