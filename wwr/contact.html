@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | White Water Rafting</title>
+  <meta
+    name="description"
+    content="Contact White Water Rafting for questions, reservations, and trip planning. Send us a message, meet our team, and find us on the map."
+  />
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+
+<body>
+  <header>
+    <a class="logo-link" href="index.html">
+      <img class="logo" src="images/logo.png" alt="White Water Rafting logo" />
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <section class="page-hero">
+      <h1>Contact Us</h1>
+      <p>Questions about trips, reservations, or our website? Send us a message and we’ll get back to you.</p>
+    </section>
+
+    <section class="contact-grid">
+      <div class="contact-card">
+        <h2>Company Information</h2>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Address:</span>
+            <span class="contact-value">123 River Bend Rd, Rapids City, ID 83440</span>
+          </li>
+          <li>
+            <span class="contact-label">Phone:</span>
+            <span class="contact-value"><a href="tel:+12085550123">(208) 555-0123</a></span>
+          </li>
+          <li>
+            <span class="contact-label">Email:</span>
+            <span class="contact-value"><a href="mailto:info@wwr.example">info@wwr.example</a></span>
+          </li>
+        </ul>
+
+        <div class="map-wrap" aria-label="Map showing White Water Rafting location">
+          <!-- Replace src with your own Google Maps embed code -->
+          <!-- IMPORTANT: Do NOT include inline style="border:0" on the iframe -->
+          <iframe
+            class="map-embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.978493236335!2d-111.949!3d40.233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f3b2b2b2b2b2%3A0x1234567890abcdef!2sRiver%20Bend%20Rd!5e0!3m2!1sen!2sus!4v1700000000000"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            title="White Water Rafting location on Google Maps"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h2>Meet Our Team</h2>
+
+        <div class="employee-grid">
+          <figure class="employee">
+            <img src="images/employee1.jpg" alt="Portrait of Alex Carter, Operations Manager" loading="lazy" />
+            <figcaption><strong>Alex Carter</strong><br />Operations Manager</figcaption>
+          </figure>
+
+          <figure class="employee">
+            <img src="images/employee2.jpg" alt="Portrait of Jordan Lee, Lead River Guide" loading="lazy" />
+            <figcaption><strong>Jordan Lee</strong><br />Lead River Guide</figcaption>
+          </figure>
+
+          <figure class="employee">
+            <img src="images/employee3.jpg" alt="Portrait of Taylor Morgan, Reservations Specialist" loading="lazy" />
+            <figcaption><strong>Taylor Morgan</strong><br />Reservations Specialist</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Send Us a Message</h2>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="fullname">Name</label>
+          <input type="text" id="fullname" name="fullname" autocomplete="name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Purpose of Message</legend>
+
+          <div class="radio-group">
+            <label class="radio-item" for="purpose-general">
+              <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required />
+              General Inquiry
+            </label>
+
+            <label class="radio-item" for="purpose-reservation">
+              <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question" />
+              Reservation Question
+            </label>
+
+            <label class="radio-item" for="purpose-website">
+              <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion" />
+              Website Suggestion
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="form-row checkbox-row">
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+          <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> White Water Rafting | Alan Hernandez | WDD 130</p>
+    <p><a href="images/contact-wireframe.png">Wireframe</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
