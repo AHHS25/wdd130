@@ -414,3 +414,158 @@ h1, h2 {
     align-items: start;
   }
 }
+/* ========== Contact Page ========== */
+
+.contact-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.page-hero {
+  padding: 1rem 0 1.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background: #fff;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.contact-list li {
+  margin: 0.5rem 0;
+}
+
+.contact-label {
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
+.map-wrap {
+  margin-top: 1rem;
+}
+
+.map-embed {
+  width: 100%;
+  height: 260px;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.employee-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.employee {
+  margin: 0;
+  text-align: center;
+}
+
+.employee img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  display: block;
+}
+
+.form-section {
+  margin-top: 2rem;
+}
+
+.contact-form {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background: #fff;
+}
+
+.form-row {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+.contact-form fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.radio-group {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.form-actions {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Footer social media required by the audit tool */
+.socialmedia {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.socialmedia img {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+/* Responsive */
+@media (min-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: start;
+  }
+}

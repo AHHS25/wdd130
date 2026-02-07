@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us | White Water Rafting</title>
-  <meta
-    name="description"
-    content="Contact White Water Rafting for questions, reservations, and trip planning. Send us a message, meet our team, and find us on the map."
-  />
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <meta name="description" content="Contact White Water Rafting for questions, reservations, and trip planning. Send us a message, meet our team, and find us on the map.">
+  <meta name="author" content="Alan Hernandez">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
   <header>
+    <meta name="author" content="Alan Hernandez">
     <a class="logo-link" href="index.html">
-      <img class="logo" src="images/logo.png" alt="White Water Rafting logo" />
+      <img class="logo" src="images/logo.png" alt="White Water Rafting logo">
     </a>
 
     <nav>
@@ -27,7 +26,7 @@
 
   <main class="contact-page">
     <section class="page-hero">
-      <h1>Contact Us</h1>
+      <h1>Contact Us - White Water Rafting</h1>
       <p>Questions about trips, reservations, or our website? Send us a message and we’ll get back to you.</p>
     </section>
 
@@ -69,18 +68,18 @@
 
         <div class="employee-grid">
           <figure class="employee">
-            <img src="images/employee1.jpg" alt="Portrait of Alex Carter, Operations Manager" loading="lazy" />
-            <figcaption><strong>Alex Carter</strong><br />Operations Manager</figcaption>
+            <img src="images/employee1.jpg" alt="Portrait of Alex Carter, Operations Manager" loading="lazy">
+            <figcaption><strong>Alex Carter</strong><br>Operations Manager</figcaption>
           </figure>
 
           <figure class="employee">
-            <img src="images/employee2.jpg" alt="Portrait of Jordan Lee, Lead River Guide" loading="lazy" />
-            <figcaption><strong>Jordan Lee</strong><br />Lead River Guide</figcaption>
+            <img src="images/employee2.jpg" alt="Portrait of Jordan Lee, Lead River Guide" loading="lazy">
+            <figcaption><strong>Jordan Lee</strong><br>Lead River Guide</figcaption>
           </figure>
 
           <figure class="employee">
-            <img src="images/employee3.jpg" alt="Portrait of Taylor Morgan, Reservations Specialist" loading="lazy" />
-            <figcaption><strong>Taylor Morgan</strong><br />Reservations Specialist</figcaption>
+            <img src="images/employee3.jpg" alt="Portrait of Taylor Morgan, Reservations Specialist" loading="lazy">
+            <figcaption><strong>Taylor Morgan</strong><br>Reservations Specialist</figcaption>
           </figure>
         </div>
       </div>
@@ -92,12 +91,12 @@
       <form class="contact-form" action="#" method="post">
         <div class="form-row">
           <label for="fullname">Name</label>
-          <input type="text" id="fullname" name="fullname" autocomplete="name" required />
+          <input type="text" id="fullname" name="fullname" autocomplete="name" required>
         </div>
 
         <div class="form-row">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" autocomplete="email" required />
+          <input type="email" id="email" name="email" autocomplete="email" required>
         </div>
 
         <fieldset class="form-row">
@@ -105,17 +104,17 @@
 
           <div class="radio-group">
             <label class="radio-item" for="purpose-general">
-              <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required />
+              <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required>
               General Inquiry
             </label>
 
             <label class="radio-item" for="purpose-reservation">
-              <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question" />
+              <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question">
               Reservation Question
             </label>
 
             <label class="radio-item" for="purpose-website">
-              <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion" />
+              <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion">
               Website Suggestion
             </label>
           </div>
@@ -127,7 +126,7 @@
         </div>
 
         <div class="form-row checkbox-row">
-          <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes">
           <label for="newsletter">Please subscribe me to the monthly newsletter</label>
         </div>
 
@@ -139,12 +138,23 @@
   </main>
 
   <footer>
-    <p>© <span id="year"></span> White Water Rafting | Alan Hernandez | WDD 130</p>
-    <p><a href="images/contact-wireframe.png">Wireframe</a></p>
-  </footer>
+  <p>
+    © 2026 White Water Rafting | Alan Hernandez | WDD 130 |
+    <a href="images/contact-wireframe.png">Wireframe</a>
+  </p>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <nav class="socialmedia" aria-label="Social media links">
+    <a href="https://facebook.com" target="_blank" rel="noopener">
+      <img src="images/facebook.png" alt="Facebook icon">
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener">
+      <img src="images/instagram.png" alt="Instagram icon">
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener">
+      <img src="images/twitter.png" alt="Twitter icon">
+    </a>
+  </nav>
+</footer>
+
 </body>
 </html>
