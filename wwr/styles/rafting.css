@@ -15,6 +15,13 @@
   --light: #f7f7f7;
   --dark: #0b1320;
 
+  /* Estandarización de colores */
+  --white: #ffffff;
+  --overlay-dark: rgba(0, 0, 0, 0.35);
+  --overlay-light: rgba(255, 255, 255, 0.92);
+  --border-light: rgba(0, 0, 0, 0.12);
+  --border-medium: rgba(0, 0, 0, 0.2);
+
   --max-width: 1100px;
   --radius: 10px;
 }
@@ -22,10 +29,9 @@
 body {
   font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--dark);
-  background: #ffffff;
+  background: var(--white);
   line-height: 1.5;
 }
-
 
 img {
   max-width: 100%;
@@ -82,13 +88,13 @@ h2 {
 .site-nav a:hover,
 .site-nav a:focus-visible {
   background: var(--secondary);
-  color: #ffffff;
+  color: var(--white);
   outline: none;
 }
 
 .site-nav a.active {
   background: var(--primary);
-  color: #ffffff;
+  color: var(--white);
 }
 
 /* ---------- HERO (audit requiere overlay: relative + absolute) ---------- */
@@ -112,8 +118,8 @@ h2 {
   position: absolute; /* requerido */
   top: 1rem;
   left: 1rem;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.35);
+  color: var(--white);
+  background: var(--overlay-dark);
   padding: 0.5rem 0.8rem;
   border-radius: 8px;
 }
@@ -124,7 +130,7 @@ h2 {
   right: 1rem;
   bottom: 1rem;
   max-width: 420px;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--overlay-light);
   padding: 1rem;
   border-radius: var(--radius);
 }
@@ -295,10 +301,10 @@ h2 {
 }
 
 .contact-card {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--border-light);
   border-radius: 0.75rem;
   padding: 1.25rem;
-  background: #fff;
+  background: var(--white);
 }
 
 .contact-list {
@@ -351,10 +357,10 @@ h2 {
 }
 
 .contact-form {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--border-light);
   border-radius: 0.75rem;
   padding: 1.25rem;
-  background: #fff;
+  background: var(--white);
 }
 
 .form-row {
@@ -367,13 +373,13 @@ h2 {
 .contact-form input[type="email"],
 .contact-form textarea {
   padding: 0.65rem 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-medium);
   border-radius: 0.5rem;
   font: inherit;
 }
 
 .contact-form fieldset {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-medium);
   border-radius: 0.5rem;
   padding: 0.75rem;
 }
