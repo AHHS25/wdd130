@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Water Rafting | Home</title>
+  <meta name="description" content="Plan your next white water rafting adventure. Explore trips, learn what to expect, and sign up for updates from our rafting team.">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <!-- Copy/paste your SAME header + nav used on about.html/contact.html -->
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="White Water Rafting logo" width="120" height="120">
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO (full width) + absolute heading -->
+    <section class="hero" aria-label="Hero section">
+      <img src="images/hero-home.jpg" alt="A rafting team navigating exciting whitewater rapids">
+
+      <h1 class="hero-title">Adventure Starts Here</h1>
+
+      <div class="hero-box">
+        <p>Safe, fun, and unforgettable river experiences led by certified guides.</p>
+        <a class="btn" href="trips.html">View Trips</a>
+      </div>
+    </section>
+
+    <!-- Newsletter (name + email + labels + ids + name attributes + button not 'submit') -->
+    <section class="newsletter" aria-label="Newsletter signup">
+      <h2>Get River Updates</h2>
+      <p>Trip openings, seasonal specials, and river condition alerts—straight to your inbox.</p>
+
+      <form class="newsletter-form" action="#" method="post">
+        <div class="field">
+          <label for="nl-name">Name</label>
+          <input type="text" id="nl-name" name="nl-name" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="nl-email">Email</label>
+          <input type="email" id="nl-email" name="nl-email" autocomplete="email" required>
+        </div>
+
+        <button class="btn" type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Grid content (NOT single column on desktop) -->
+    <section class="home-grid" aria-label="Company offerings">
+      <h2 class="section-title">Why Ride With Us</h2>
+
+      <article class="card">
+        <img src="images/home-guides.jpg" alt="A guide giving safety instructions before a trip">
+        <h3>Certified Guides</h3>
+        <p>Our team is trained in safety, rescue, and river navigation to keep your trip confident and enjoyable.</p>
+      </article>
+
+      <article class="card">
+        <img src="images/home-gear.jpg" alt="Rafting helmets and life vests prepared for guests">
+        <h3>Quality Gear Included</h3>
+        <p>We provide helmets, PFDs, paddles, and rafts that are inspected and ready for the water.</p>
+      </article>
+
+      <article class="card card-wide">
+        <img src="images/home-scenery.jpg" alt="A scenic canyon river view during a rafting trip">
+        <h3>Scenery + Thrills</h3>
+        <p>Choose from calm floats or big rapids while enjoying wildlife, canyon views, and a memorable day outdoors.</p>
+        <p class="small-muted">Not sure what to choose? Start with our trip list and we’ll help you pick the best option.</p>
+        <a class="btn btn-outline" href="trips.html">Explore Trips</a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Copy/paste your SAME footer used on about.html/contact.html -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> White Water Rafting | Alan Helaman Hernandez Serrato</p>
+    <nav class="sociallinks" aria-label="Social media">
+      <a href="https://facebook.com" aria-label="Facebook">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com" aria-label="Instagram">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com" aria-label="Twitter / X">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+    </nav>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

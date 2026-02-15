@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Water Rafting | Trips</title>
+  <meta name="description" content="Explore our rafting trips with photos, detailed descriptions, and a table summary with difficulty, duration, season, and pricing.">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <!-- Copy/paste your SAME header + nav used on about.html/contact.html -->
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="White Water Rafting logo" width="120" height="120">
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-label="Trips header">
+      <div class="page-hero-text">
+        <h1>Our Trips</h1>
+        <p>Choose your adventure level. We’ll provide the gear, guidance, and unforgettable memories.</p>
+        <!-- CTA to contact page -->
+        <a class="btn" href="contact.html">Contact Us to Book</a>
+      </div>
+      <img class="page-hero-img" src="images/hero-trips.jpg" alt="Rafting team celebrating after running rapids">
+    </section>
+
+    <!-- Trip cards in a grid (not single column on desktop) -->
+    <section class="trip-grid" aria-label="Trip descriptions">
+      <article class="trip-card">
+        <img src="images/trip-beginner.jpg" alt="Gentle rafting section for beginners">
+        <h2>Beginner Splash</h2>
+        <p class="trip-meta"><strong>Difficulty:</strong> Class I–II • <strong>Duration:</strong> Half Day</p>
+        <p>Perfect for first-timers and families who want fun rapids with calm water breaks.</p>
+        <ul>
+          <li>Minimum age: 6+</li>
+          <li>Includes guide + gear</li>
+          <li>Morning and afternoon departures</li>
+        </ul>
+      </article>
+
+      <article class="trip-card">
+        <img src="images/trip-intermediate.jpg" alt="Medium rapids for an intermediate rafting trip">
+        <h2>Canyon Runner</h2>
+        <p class="trip-meta"><strong>Difficulty:</strong> Class II–III • <strong>Duration:</strong> Full Day</p>
+        <p>A balanced trip with exciting rapids, scenic canyon views, and time to relax between runs.</p>
+        <ul>
+          <li>Minimum age: 12+</li>
+          <li>Lunch included</li>
+          <li>Most popular option</li>
+        </ul>
+      </article>
+
+      <article class="trip-card">
+        <img src="images/trip-advanced.jpg" alt="Large rapids for an advanced rafting trip">
+        <h2>Rapid Xtreme</h2>
+        <p class="trip-meta"><strong>Difficulty:</strong> Class III–IV • <strong>Duration:</strong> 2 Days</p>
+        <p>For experienced adventurers who want bigger drops, technical lines, and a true challenge.</p>
+        <ul>
+          <li>Minimum age: 16+</li>
+          <li>Overnight camp included</li>
+          <li>Meals + safety briefing</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Table summary -->
+    <section class="trip-table" aria-label="Trip summary table">
+      <h2 class="section-title">Trip Summary</h2>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Available Trips, Difficulty, Season, and Pricing</caption>
+          <thead>
+            <tr>
+              <th scope="col">Trip</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Difficulty</th>
+              <th scope="col">Season</th>
+              <th scope="col">Price (per person)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Beginner Splash</th>
+              <td>Half Day</td>
+              <td>Class I–II</td>
+              <td>Mar–Oct</td>
+              <td>$79</td>
+            </tr>
+            <tr>
+              <th scope="row">Canyon Runner</th>
+              <td>Full Day</td>
+              <td>Class II–III</td>
+              <td>Apr–Sep</td>
+              <td>$149</td>
+            </tr>
+            <tr>
+              <th scope="row">Rapid Xtreme</th>
+              <td>2 Days</td>
+              <td>Class III–IV</td>
+              <td>May–Aug</td>
+              <td>$349</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="small-muted">Questions about what to bring? <a href="contact.html">Send us a message</a>.</p>
+    </section>
+  </main>
+
+  <!-- Copy/paste your SAME footer used on about.html/contact.html -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> White Water Rafting | Alan Helaman Hernandez Serrato</p>
+    <nav class="sociallinks" aria-label="Social media">
+      <a href="https://facebook.com" aria-label="Facebook">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com" aria-label="Instagram">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com" aria-label="Twitter / X">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+    </nav>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
